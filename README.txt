@@ -1,64 +1,57 @@
-Fork the repository 
+# Attendance Management System
 
-We are using java swing for the frontend and mysql server.
+This is an Attendance Management System implemented in Java Swing for the frontend and MySQL for the backend.
 
-There are 5 classes. Login. Signup, Student, Faculty, Administrator. And the database is in student_attendance file inside the FinalProject file. 
+## Getting Started
 
-After unziping and placing the project.
+To use the system, follow these steps:
 
-Goto the login class and run the file.
+1. **Project Setup:**
+   - Fork and clone the repository.
+   - Unzip and place the project files in your preferred location.
 
-GoTo the signup option for craeting administrator user account. 
+2. **Login:**
+   - Go to the `Login` class and run the file.
+   - Create an Administrator user account through the signup option.
+   - Log in with proper Administrator credentials to access the Administrator window.
 
-After creating the account goto Back.
+3. **Administrator Actions:**
+   - Create faculty profiles and student profiles.
+   - Launch courses.
+   - Add students to their respective courses.
+   - Update Administrator information, using dropdown menus to handle foreign key-related errors.
+   - Log out from the Administrator window.
 
-Then give proper information to login as Administrator.
+4. **Faculty Actions:**
+   - Log in with Faculty ID and password.
+   - Manage attendance for students in courses.
+   - Send messages to other faculty members.
+   - Log out from the Faculty window.
 
-Then Administrator window will appear.
+5. **Student Actions:**
+   - Log in with Student ID and password.
+   - Check attendance for enrolled courses.
+   - Log out from the Student window.
 
-First we need to create faculty profile then student profile.
+6. **Exiting the Application:**
+   - Click "EXIT" in the login window to close the application.
 
-Then we need to launch a course. 
+## Usage
 
-Then we can add the students for their partical course.
+To run this system, you need to have the following software and components installed:
 
-We also can update the admknistrator information. 
-(To handle foreign key related errors we use dropdown menu in this class.)
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [MySQL Database Server](https://dev.mysql.com/downloads/installer/)
+- [MySQL Connector/J JDBC Driver](https://dev.mysql.com/downloads/connector/j/)
 
-Then after logout from the administrator window we should go to the faculty window.
+Before running the application, set up the necessary database and tables, which can be found in the `student_attendance` file inside the `FinalProject` directory.
 
-After logout again login window will appear. 
+## Contributing
 
-As Faculty_Id and Student_Id is also set as user id. we can use those id as user id and password for login into the accounts
+If you'd like to contribute to this project, feel free to submit issues and pull requests on the GitHub repository.
 
-with faculty id and password open faculty window. 
+## License
 
-type the date in the following way then select Show button.
+This project is licensed under the [MIT License](LICENSE).
 
-It will show all the faculty id. select a id and select add button.
 
-It will show the course id and initial for the selected faculty.
-
-Select the course and initial. Then select ADD.
-
-Select the student id from the comboBox and after selecting the status 
-press take attendance button to store the attendance into database. 
-
-Show data button will show the attendance data of students according to the course id.
-
-Faculty can select the faculty id and password and send message. this messege will be saved into the databe table named message.
-
-Then Logout from the window and using student id as user id and password login into student window.
-
-Provide the valid student id and click show button
-
-it will the the courses list that the student is taken. 
-
-select the course and select 'check Attendance' button. it will check the attendance 
-for the particular course. 
-
-After logout again the login window will appear. After click EXIT the entire frame will dispose. 
-
-..................................END OF PROJECT..............................................................................
-
- 
